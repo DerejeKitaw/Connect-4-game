@@ -11,8 +11,19 @@
   <body>
     <div id="root"></div>
     <script type="text/babel">
+      function Circle(){
+        var style = {
+            backgroundColor:"white",
+            border: "1px solid black",
+            borderRadius: "100%",
+            paddingTop: "98%"
+        }
+        return (
+          <div style = {style}></div>
+        )
+      }
         ReactDOM.render(
-              <div>Hello World</div>,
+              <Circle/>,
               document.getElementById("root")
           )
     </script>
