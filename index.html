@@ -52,8 +52,22 @@
             </div>
         )
       }
+
+      function Board(){
+        var rows = []
+        for(let i = 0; i < 6; i++){
+            rows.push(<Row/>)
+        }
+        return (
+            <div>
+                {rows}
+            </div>
+        )
+      }
+
+
         ReactDOM.render(
-              <Row/>,
+              <Board/>,
               document.getElementById("root")
           )
     </script>
